@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: Center(
                         child: Text(
-                          displayExOh[index],
+                         displayExOh[index],
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 40,

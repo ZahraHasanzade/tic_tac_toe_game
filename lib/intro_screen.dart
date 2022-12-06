@@ -49,20 +49,12 @@ class _IntroScreenState extends State<IntroScreen>
                     repeat: true,
                     repeatPauseDuration: Duration(seconds: 1),
                     startDelay: Duration(seconds: 1),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(
-                            style: BorderStyle.none,
-                          ),
-                          shape: BoxShape.circle
-                      ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(90),
                       child: CircleAvatar(
                         backgroundColor: Colors.grey.shade900,
                         child: Container(
-                          child: Image.asset('images/photo.jpg',
-                            color: Colors.white,
-                            fit: BoxFit.scaleDown,
-                          ),
+                          child: Image.asset('images/photo.jpg'),
                         ),
                         radius: 80,
                       ),
